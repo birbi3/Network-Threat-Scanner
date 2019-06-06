@@ -42,8 +42,8 @@ def clean_network(addy):
 	new_addy += "0"
 	return new_addy
 
-"""This function is to ping the entire network. My thought process was behind this is that it would take up less time
-to scan a list of specific address apposed to scanning the whole network.
+"""This function is to ping the entire network. My thought process behind this is that it would take up less time
+to scan a list of specific addresses apposed to scanning the whole network.
 """
 
 #This needs to be looked at.
