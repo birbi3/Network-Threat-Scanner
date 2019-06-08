@@ -1,2 +1,0 @@
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2019-06-07 19:59 CDT
