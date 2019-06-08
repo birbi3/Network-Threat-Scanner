@@ -42,23 +42,6 @@ def clean_network(addy):
 	new_addy += "0"
 	return new_addy
 
-"""This function is to ping the entire network. My thought process behind this is that it would take up less time
-to scan a list of specific addresses apposed to scanning the whole network.
-"""
-
-#This needs to be looked at.
-def ping_sweep(network):
-	up_ip = {}
-	for ip in IPNetwork(network):
-		ip = str(ip)
-		ip_ping = pyping.ping(ip)
-		if ip_ping.ret_code == 0: print (ip + " is up")
-	
-"""
-def cve_scan():
-	##looks for cves based on the information in scan json file
-"""
-
 def main():
 	network = net_detect()
 	ping_sweep(network)
