@@ -1,0 +1,1 @@
+nmap -sU -sT -p0-65535 -sV
