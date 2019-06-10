@@ -2,7 +2,7 @@ import os
 
 #TODO get example nmap output file for prasing. 
 
-#Will scan every port and parse the data 
+#Will run the nmap scan in the config file 
 def heavy_scan(network):
 	with open("config", "r") as config: 
 		scan = config.readline()
