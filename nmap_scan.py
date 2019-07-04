@@ -1,9 +1,8 @@
-import os
-import json
-import socket
-
-#Will scan every port
 def heavy_scan(network):
+	"""runs and nmap scan and dumps output to a textfile
+	Args:
+		network (string): The network and subnet going to be scanned
+	"""
 	with open("config", "r") as config: 
 		#reads a nmap command form the config file. This might not be here long. 
 		scan = config.readline(0)
@@ -11,6 +10,15 @@ def heavy_scan(network):
 
   
 def results_data(host,mac,port):
+	"""Data structure for all the results data.
+	Args: 
+		host (string): host ip for device data
+		mac (string): mac address for device data
+		port (list): all the ports associtated with the host
+
+	Return: 
+		resilts (dict): all the data in a dict for easier management
+	"""
 	results = {"hosts": host, 
 	"mac": mac, 
 	"port": port
@@ -19,6 +27,8 @@ def results_data(host,mac,port):
 	return results
 
 def parse_scan():
+	"""prases output text file
+	"""
 	heavy_scan()
 	with open('scan-results.txt', 'r') as results:
 		data = []

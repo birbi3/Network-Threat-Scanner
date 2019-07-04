@@ -1,5 +1,15 @@
-import net_detect, nmap_scan
+#!/usr/bin/env python
 
+#source modules
+import net_detect, nmap_scan
+#standard library
+import os
+import json
+import socket
+
+#open source
+import pyping, netifaces
+from netaddr import *
 
 def main():
 	

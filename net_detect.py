@@ -1,13 +1,9 @@
-#!/usr/bin/env python
-
-#open source
-import pyping, netifaces
-from netaddr import *
-
-
-#This function is to determine what the network and subnet mask is. 
+#This function is to 
 def net_detect():
-	#fetches interfaces
+	"""determines what the network and subnet mask is. 
+	Return:
+		network (string): the network and subnet
+	"""
 	net_info = netifaces.interfaces()
 	for device in net_info:
 		current = is_interface_up(device)
