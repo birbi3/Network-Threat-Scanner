@@ -8,7 +8,7 @@ import json
 import socket
 
 #open source
-import pyping, netifaces
+import netifaces
 from netaddr import *
 
 def main():
