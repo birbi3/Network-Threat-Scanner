@@ -1,2 +1,4 @@
-Add better docs
-Take port information and compare it to CVEs
+CVE_DATA:
+	Loops through all the ports associated with the mac address so all data goes through the search:
+		Need to write a regular expression for parsing all of the port numbers. 
+		Need to find a way to dymaically get all of the info and format it for the api search.

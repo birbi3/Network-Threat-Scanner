@@ -5,5 +5,6 @@ With that data I would like to compare it to known vulnerabilities and help user
 
 It is a work in progress. If you follow this project there will be times where I am going to upload unfinished functions and stuff that looks like junk.
 
-
+The api used for grabbing cve data was https://www.cve-search.org/api/
+They saved us all time by writing a very verbose python module.
 #Feedback would be greatly appreciated!

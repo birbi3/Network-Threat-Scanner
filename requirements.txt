@@ -1,4 +1,4 @@
 python-nmap
-pyping
 netifaces
 netaddr
+PyCVESearch
