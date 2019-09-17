@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
 #source modules
-import net_detect, nmap_scan
+from util.cve_data import *
+from util.net_detect import *
+from util.nmap_scan import *
 #standard library
 import os
 import json
